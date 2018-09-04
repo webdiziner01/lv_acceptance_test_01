@@ -19,7 +19,7 @@ class UserAuthTest extends TestCase
 
     public function test_user_sees_name_in_navigation_when_signed_in(){
 
-        $user = factory(\App\User::class)->create(['name' => 'Alex Garret']);
+        $user = factory(\App\User::class)->create(['first_name' => 'Alex', 'last_name' => 'Garret']);
 
 
         $response = $this->actingAs($user)
